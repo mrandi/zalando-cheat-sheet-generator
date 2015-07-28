@@ -1,0 +1,55 @@
+.icons > .company {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica;
+}
+
+.cs {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+    -webkit-column-rule-color: #FF7A41; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #FF7A41; /* Firefox */
+    column-rule-color: #FF7A41;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+    background: #FF7A41;
+    padding: 1em;
+}
+
+div {
+    background: white;
+    padding: 1em;
+    margin-bottom: 1.3em;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
