@@ -36,6 +36,7 @@ function getData() {
         .then(function (json) {
             data.push(json);
             renderElements(data[data.length - 1].elements);
+            prettyPrint();
         });
 
 
