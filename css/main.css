@@ -1,16 +1,3 @@
-.icons > .company {
-    margin-right: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    font-family: Helvetica;
-}
-
 .cs {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
