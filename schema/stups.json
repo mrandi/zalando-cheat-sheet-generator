@@ -1,0 +1,100 @@
+{
+  "elements": [
+    {
+      "title": "Pierone",
+      "keys": [
+        {
+          "key": "$ pierone login",
+          "value": "Login to pierone"
+        }
+      ]
+    },
+    {
+      "title": "Mai",
+      "keys": [
+        {
+          "key": "$ mai",
+          "value": "Authentication with default profile"
+        }
+      ]
+    },
+    {
+      "title": "Senza",
+      "keys": [
+        {
+          "key": "$ senza init myapp.yaml",
+          "value": "Bootstrap senza definition"
+        },
+        {
+          "key": "$ senza create myapp.yaml 1 0.1-SNAPSHOT",
+          "value": "Create a Cloud Formation stack from the senza definition file"
+        },
+        {
+          "key": "$ senza create --disable-rollback myerroneous-stack.yaml 1",
+          "value": "You can disable the automatic Cloud Formation rollback-on-failure in order to do ‘post-mortem’ debugging"
+        },
+        {
+          "key": "$ senza list myapp.yaml",
+          "value": "list only active stacks for myapp"
+        },
+        {
+          "key": "$ senza list myapp.yaml --all",
+          "value": "list stacks for myapp (also deleted ones)"
+        },
+        {
+          "key": "$ senza list",
+          "value": "ist all active stacks"
+        },
+        {
+          "key": "$ senza list --all",
+          "value": "list all stacks (including deleted ones)"
+        },
+        {
+          "key": "$ senza resources myapp.yaml 1",
+          "value": "List all CF resources"
+        },
+        {
+          "key": "$ senza events myapp.yaml 1",
+          "value": "List all CF events"
+        },
+        {
+          "key": "$ senza instances myapp.yaml 1",
+          "value": "List EC2 instances and IPs"
+        },
+        {
+          "key": "$ senza console myapp.yaml 1",
+          "value": "Get EC2 console output for all stack instances"
+        },
+        {
+          "key": "$ senza console 172.31.1.2",
+          "value": "Get EC2 console output for single instance"
+        },
+        {
+          "key": "$ senza traffic myapp.yaml",
+          "value": "Show traffic distribution"
+        },
+        {
+          "key": "$ senza traffic myapp.yaml 2 50",
+          "value": "Give version 2 50% of traffic"
+        },
+        {
+          "key": "$ senza delete myapp.yaml 1",
+          "value": "Delete a stack"
+        },
+        {
+          "key": "$ senza images",
+          "value": "List all available Taupage AMIs"
+        }
+      ]
+    },
+    {
+      "title": "Zign",
+      "keys": [
+        {
+          "key": "$ zign token",
+          "value": "To get a new token"
+        }
+      ]
+    }
+  ]
+}
