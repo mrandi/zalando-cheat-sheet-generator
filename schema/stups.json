@@ -55,7 +55,7 @@
         },
         {
           "key": "$ senza list",
-          "value": "ist all active stacks"
+          "value": "List all active stacks"
         },
         {
           "key": "$ senza list --all",
