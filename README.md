@@ -11,3 +11,8 @@ To use this generator:
 Example:
 
 [https://stups.io/zalando-cheat-sheet-generator/?schema=https://raw.githubusercontent.com/zalando-stups/zalando-cheat-sheet-generator/gh-pages/schema/stups.json](https://stups.io/zalando-cheat-sheet-generator/?schema=https://raw.githubusercontent.com/zalando-stups/zalando-cheat-sheet-generator/gh-pages/schema/stups.json)
+
+### TODO: How to write a good cheat sheet
+
+* ..
+* ..
