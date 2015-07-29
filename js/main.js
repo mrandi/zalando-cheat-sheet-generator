@@ -59,9 +59,9 @@ function saveSvg() {
 
     source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
 
-    var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);
-
-    document.getElementById("link").href = url;
+    var data = new Blob([source]);
+    var a = document.getElementById('link');
+    a.href = URL.createObjectURL(data);
 }
 
 function getData() {
