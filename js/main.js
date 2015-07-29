@@ -44,26 +44,6 @@ function renderElements(elementValues) {
 
 }
 
-function saveSvg() {
-    var svg = document.getElementById("svg");
-
-    var serializer = new XMLSerializer();
-    var source = serializer.serializeToString(svg);
-
-    if (!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)) {
-        source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
-    }
-    if (!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)) {
-        source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
-    }
-
-    source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
-
-    var data = new Blob([source]);
-    var a = document.getElementById('link');
-    a.href = URL.createObjectURL(data);
-}
-
 function getData() {
     $.getJSON(BASE_URL)
         .then(function (json) {
@@ -72,7 +52,6 @@ function getData() {
             $('pre code').each(function (i, block) {
                 hljs.highlightBlock(block);
             });
-            saveSvg();
         });
 
 
