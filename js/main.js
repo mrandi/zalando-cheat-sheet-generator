@@ -17,14 +17,21 @@ function getUrlParameter(sParam) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
         }
     }
-};
+}
 
 function renderElements(elementValues) {
-    var $hz = $('p.zcs').first();
+
+    var $t = $('h1.zcs-title').first();
+    if (elementValues.title && elementValues.url) {
+        $t.text(elementValues.title + ' - ' + elementValues.url);
+    }
+    //console.log(elementValues);
+
+    var $hz = $('span.zcs').first();
     $hz.children().remove();
 
-    elementValues.forEach(function (elementValue) {
-        console.log(elementValue);
+    elementValues.elements.forEach(function (elementValue) {
+        //console.log(elementValue);
         $hz.append(template(elementValue));
     });
 
@@ -35,8 +42,10 @@ function getData() {
     $.getJSON(BASE_URL)
         .then(function (json) {
             data.push(json);
-            renderElements(data[data.length - 1].elements);
-            prettyPrint();
+            renderElements(data[data.length - 1]);
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
         });
 
 

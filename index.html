@@ -11,7 +11,7 @@
             <h1>{{ title }}</h1>
             <ul>{{#each keys}}
                 <li>
-                    <pre class="prettyprint">{{key}}</pre>
+                    <pre><code>{{key}}</code></pre>
                 </li>
                 <li>{{value}}</li>
                 <hr>
@@ -23,19 +23,19 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/main.js"></script>
 
-    <link href="js/lib/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/code-prettify.css">
-    <script type="text/javascript" src="js/lib/google-code-prettify/prettify.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/lib/highlight/styles/railscasts.css">
+    <script type="text/javascript" src="js/lib/highlight/highlight.pack.js"></script>
+
 </head>
 <body>
 
 <div>
-    <h1>Cheat sheet</h1>
+    <h1 class="zcs-title">Cheat sheet</h1>
 </div>
 
 
 <div class="cs">
-    <p class="zcs"></p>
+    <span class="zcs"></span>
 </div>
 
 </body>
