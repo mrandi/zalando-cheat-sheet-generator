@@ -47,11 +47,11 @@
       "keys": [
         {
           "key": "$ senza list myapp.yaml",
-          "value": "list only active stacks for myapp"
+          "value": "List only active stacks for myapp"
         },
         {
           "key": "$ senza list myapp.yaml --all",
-          "value": "list stacks for myapp (also deleted ones)"
+          "value": "List stacks for myapp (also deleted ones)"
         },
         {
           "key": "$ senza list",
@@ -59,7 +59,7 @@
         },
         {
           "key": "$ senza list --all",
-          "value": "list all stacks (including deleted ones)"
+          "value": "List all stacks (including deleted ones)"
         },
         {
           "key": "$ senza resources myapp.yaml 1",
