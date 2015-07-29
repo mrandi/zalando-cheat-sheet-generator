@@ -23,7 +23,14 @@ function renderElements(elementValues) {
 
     var $t = $('h1.zcs-title').first();
     if (elementValues.title && elementValues.url) {
-        $t.text(elementValues.title + ' - ' + elementValues.url);
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(elementValues.url);
+        a.appendChild(linkText);
+        a.title = elementValues.url;
+        a.href = elementValues.url;
+
+        $t.text(elementValues.title + ' - ');
+        $t.append(a);
     }
     //console.log(elementValues);
 
