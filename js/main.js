@@ -60,7 +60,5 @@ function getData() {
 $(document).ready(function () {
 
     template = Handlebars.compile($('#zcs-template').html());
-    document.getElementById("cheat-sheet").data = window.location.href;
-
     getData();
 });
