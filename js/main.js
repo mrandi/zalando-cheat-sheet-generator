@@ -44,6 +44,25 @@ function renderElements(elementValues) {
 
 }
 
+function saveSvg() {
+    var svg = document.getElementById("svg");
+
+    var serializer = new XMLSerializer();
+    var source = serializer.serializeToString(svg);
+
+    if (!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)) {
+        source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+    }
+    if (!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)) {
+        source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+    }
+
+    source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+
+    var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);
+
+    document.getElementById("link").href = url;
+}
 
 function getData() {
     $.getJSON(BASE_URL)
@@ -53,6 +72,7 @@ function getData() {
             $('pre code').each(function (i, block) {
                 hljs.highlightBlock(block);
             });
+            saveSvg();
         });
 
 
@@ -61,6 +81,7 @@ function getData() {
 $(document).ready(function () {
 
     template = Handlebars.compile($('#zcs-template').html());
+    document.getElementById("cheat-sheet").data = window.location.href;
 
     getData();
 });
