@@ -29,7 +29,6 @@ body {
 div {
     background: white;
     padding: 1em;
-    margin-bottom: 1.3em;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -40,3 +39,22 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
+.cheat .hljs {
+    transition: background .2s linear;
+}
+
+.cheat .hljs:hover {
+    background: #666;
+    cursor: pointer;
+}
+
+/* just in case
+
+.hljs:before {
+    content: '$';
+    display: inline-block;
+    padding-right: .5em;
+}
+
+*/

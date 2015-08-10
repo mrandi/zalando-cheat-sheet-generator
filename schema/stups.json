@@ -6,7 +6,7 @@
       "title": "Pierone",
       "keys": [
         {
-          "key": "$ pierone login",
+          "key": "pierone login",
           "value": "Login to pierone"
         }
       ]
@@ -15,7 +15,7 @@
       "title": "Mai",
       "keys": [
         {
-          "key": "$ mai",
+          "key": "mai",
           "value": "Authentication with default profile"
         }
       ]
@@ -24,7 +24,7 @@
       "title": "Senza - init",
       "keys": [
         {
-          "key": "$ senza init myapp.yaml",
+          "key": "senza init myapp.yaml",
           "value": "Bootstrap senza definition"
         }
       ]
@@ -33,11 +33,11 @@
       "title": "Senza - create",
       "keys": [
         {
-          "key": "$ senza create myapp.yaml 1 0.1-SNAPSHOT",
+          "key": "senza create myapp.yaml 1 0.1-SNAPSHOT",
           "value": "Create a Cloud Formation stack from the senza definition file"
         },
         {
-          "key": "$ senza create --disable-rollback myerroneous-stack.yaml 1",
+          "key": "senza create --disable-rollback myerroneous-stack.yaml 1",
           "value": "You can disable the automatic Cloud Formation rollback-on-failure in order to do ‘post-mortem’ debugging"
         }
       ]
@@ -46,35 +46,35 @@
       "title": "Senza - list",
       "keys": [
         {
-          "key": "$ senza list myapp.yaml",
+          "key": "senza list myapp.yaml",
           "value": "List only active stacks for myapp"
         },
         {
-          "key": "$ senza list myapp.yaml --all",
+          "key": "senza list myapp.yaml --all",
           "value": "List stacks for myapp (also deleted ones)"
         },
         {
-          "key": "$ senza list",
+          "key": "senza list",
           "value": "List all active stacks"
         },
         {
-          "key": "$ senza list --all",
+          "key": "senza list --all",
           "value": "List all stacks (including deleted ones)"
         },
         {
-          "key": "$ senza resources myapp.yaml 1",
+          "key": "senza resources myapp.yaml 1",
           "value": "List all CF resources"
         },
         {
-          "key": "$ senza events myapp.yaml 1",
+          "key": "senza events myapp.yaml 1",
           "value": "List all CF events"
         },
         {
-          "key": "$ senza instances myapp.yaml 1",
+          "key": "senza instances myapp.yaml 1",
           "value": "List EC2 instances and IPs"
         },
         {
-          "key": "$ senza images",
+          "key": "senza images",
           "value": "List all available Taupage AMIs"
         }
       ]
@@ -83,11 +83,11 @@
       "title": "Senza - console",
       "keys": [
         {
-          "key": "$ senza console myapp.yaml 1",
+          "key": "senza console myapp.yaml 1",
           "value": "Get EC2 console output for all stack instances"
         },
         {
-          "key": "$ senza console 172.31.1.2",
+          "key": "senza console 172.31.1.2",
           "value": "Get EC2 console output for single instance"
         }
       ]
@@ -96,11 +96,11 @@
       "title": "Senza - traffic",
       "keys": [
         {
-          "key": "$ senza traffic myapp.yaml",
+          "key": "senza traffic myapp.yaml",
           "value": "Show traffic distribution"
         },
         {
-          "key": "$ senza traffic myapp.yaml 2 50",
+          "key": "senza traffic myapp.yaml 2 50",
           "value": "Give version 2 50% of traffic"
         }
       ]
@@ -109,7 +109,7 @@
       "title": "Senza - delete",
       "keys": [
         {
-          "key": "$ senza delete myapp.yaml 1",
+          "key": "senza delete myapp.yaml 1",
           "value": "Delete a stack"
         }
       ]
@@ -118,7 +118,7 @@
       "title": "Zign",
       "keys": [
         {
-          "key": "$ zign token",
+          "key": "zign token",
           "value": "To get a new token"
         }
       ]

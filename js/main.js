@@ -51,6 +51,7 @@ function getData() {
             renderElements(data[data.length - 1]);
             $('pre code').each(function (i, block) {
                 hljs.highlightBlock(block);
+                registerCopyHandler(block);
             });
         });
 
@@ -58,7 +59,25 @@ function getData() {
 }
 
 $(document).ready(function () {
-
     template = Handlebars.compile($('#zcs-template').html());
     getData();
 });
+
+function registerCopyHandler(node) {
+    var $node = $(node);
+    $node.on('click', function() {
+        var range = document.createRange();
+        range.selectNode(node);
+        window.getSelection().addRange(range);
+
+        try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Copy command was ' + msg);
+        } catch(err) {
+            console.log('Oops, unable to copy');
+        }
+
+        window.getSelection().removeAllRanges();
+    });
+}
