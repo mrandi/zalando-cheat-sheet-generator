@@ -2,6 +2,15 @@
   "title": "STUPS - Cheat sheet",
   "url": "https://github.com/zalando-stups",
   "elements": [
+  {
+      "title": "Installation",
+      "keys": [
+        {
+          "key": "sudo pip3 install --upgrade stups",
+          "value": "Install or update all STUPS tools"
+        }
+      ]
+    },
     {
       "title": "Pierone",
       "keys": [
