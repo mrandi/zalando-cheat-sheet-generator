@@ -131,6 +131,19 @@
           "value": "To get a new token"
         }
       ]
+    },
+      {
+      "title": "Taupage Log Files",
+      "keys": [
+        {
+          "key": "/var/log/syslog",
+          "value": "Contains the logs about taupage init process until the start of the docker container"
+        },
+        {
+          "key": "/var/log/application.log",
+          "value": "Contains the stdout of the docker container"
+        }
+      ]
     }
   ]
 }
