@@ -15,7 +15,7 @@ With less words:
 * clone repo
 * $ npm install http-server -g
 * $ http-server -p 8080
-* http://localhost:8000/index.html?schema=schema/stups.json
+* http://localhost:8080/index.html?schema=schema/stups.json
 
 Example:
 
