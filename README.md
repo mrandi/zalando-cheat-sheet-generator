@@ -13,7 +13,8 @@ To use this generator:
 With less words:
 
 * clone repo
-* $ python -m http.server 8000
+* $ npm install http-server -g
+* $ http-server -p 8080
 * http://localhost:8000/index.html?schema=schema/stups.json
 
 Example:
