@@ -10,6 +10,12 @@ To use this generator:
 * define a [schema.json](schema/stups.json)
 * GET on  https://YOUR_DOMAIN/zalando-cheat-sheet-generator/?schema=YOUR_SCHEMA_URL
 
+With less words:
+
+* clone repo
+* $ python -m http.server 8000
+* http://localhost:8000/index.html?schema=schema/stups.json
+
 Example:
 
 [https://YOUR_DOMAIN/zalando-cheat-sheet-generator/?schema=https://raw.githubusercontent.com/zalando-stups/zalando-cheat-sheet-generator/gh-pages/schema/stups.json](https://YOUR_DOMAIN/zalando-cheat-sheet-generator/?schema=https://raw.githubusercontent.com/zalando-stups/zalando-cheat-sheet-generator/gh-pages/schema/stups.json)
