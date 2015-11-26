@@ -12,6 +12,6 @@ COPY js/* /js/
 COPY schema/* /schema/
 COPY index.html /
 
-EXPOSE 8080
+EXPOSE 8000
 
-CMD http-server / -p 8080
+CMD http-server / -p 8000
