@@ -5,7 +5,7 @@ MAINTAINER Zalando SE
 RUN npm install http-server -g
 
 # scm-source.json must be in /
-# all other files can be copy wherever you want
+# all other files can be wherever you want
 COPY scm-source.json /
 COPY css /css
 COPY js /js
